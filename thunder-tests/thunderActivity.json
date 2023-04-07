@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "90375271-71cb-46fa-91ba-a9995685bd03",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8080/",
+    "url": "localhost:8080/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-07T16:31:31.789Z",
+    "modified": "2023-04-07T16:31:31.789Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0be467b8-23c1-4fa8-9206-aede385a2e03",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8080/users",
+    "url": "localhost:8080/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-07T16:31:35.236Z",
+    "modified": "2023-04-07T20:44:55.497Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"pardodavid10@gmail.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4c7992e2-b4cf-4124-aac4-80e0868c6b11",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8080/users",
+    "url": "localhost:8080/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-07T16:31:39.089Z",
+    "modified": "2023-04-07T22:06:10.767Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"pardodavid10@gmail.com\",\n  \"password\":\"12345\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
