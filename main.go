@@ -1,6 +1,7 @@
 package main
 
 import (
+	"davidPardoC/gym-app/database"
 	"davidPardoC/gym-app/users"
 	"fmt"
 
@@ -9,7 +10,7 @@ import (
 
 func main() {
 	r := gin.Default()
-	database, err := users.ConnectDatabase()
+	database, err := database.GetDatabase()
 	if err != nil {
 		fmt.Println("Error", err.Error())
 	}
