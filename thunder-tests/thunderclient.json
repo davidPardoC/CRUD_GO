@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "_id": "4cc221b4-c97d-47b0-8c16-f71f416e08c9",
+    "colId": "bee29ad5-cab0-473c-ae8f-2ae806564669",
+    "containerId": "",
+    "name": "Get Users",
+    "url": "localhost:8080/users",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-08T03:47:07.982Z",
+    "modified": "2023-04-08T03:47:17.240Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e800e75a-0951-46a1-9e70-1af13fad3337",
+    "colId": "bee29ad5-cab0-473c-ae8f-2ae806564669",
+    "containerId": "",
+    "name": "Create User",
+    "url": "localhost:8080/users",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-08T03:47:29.677Z",
+    "modified": "2023-04-08T03:54:07.517Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"pardodavid10@gmail.com\",\n  \"password\":\"mypassword\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

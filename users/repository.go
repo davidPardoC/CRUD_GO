@@ -1,9 +1,10 @@
 package users
 
 type UserRepository interface {
-	InsertUser(user UserModel) UserModel
-	GetAllUsers() []UserModel
-	GetUserById(id int) UserModel
+	InsertUser(user User) (User, error)
+	GetAllUsers() []User
+	GetUserById(id int) User
+	GetUserByEmail(email string) User
 }
 
 var UserRepositoryImplementation UserRepository
