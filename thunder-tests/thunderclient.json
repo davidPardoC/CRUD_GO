@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-04-08T03:47:29.677Z",
-    "modified": "2023-04-08T03:54:07.517Z",
+    "modified": "2023-04-08T04:53:11.971Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"pardodavid10@gmail.com\",\n  \"password\":\"mypassword\"\n}",
+      "raw": "{\n  \"email\": \"pardodavid2@gmail.com\",\n  \"password\":\"mypassword\"\n}",
       "form": []
     },
     "tests": []

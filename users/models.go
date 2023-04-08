@@ -7,3 +7,7 @@ type User struct {
 	Created  int64  `gorm:"autoCreateTime"`
 	Updated  int64  `gorm:"autoUpdateTime"`
 }
+
+func (User) TableName() string {
+	return "users"
+}
