@@ -8,7 +8,7 @@ import (
 
 type UserResponse struct {
 	Email string `json:"email"`
-	Id    string `json:"id"`
+	Id    int    `json:"id"`
 }
 
 func GetUsersHandler(ctx *gin.Context) {
@@ -17,6 +17,11 @@ func GetUsersHandler(ctx *gin.Context) {
 }
 
 func PostUserHandler(ctx *gin.Context) {
+
+	var body []byte
+
+	ctx.Request.Body.Read(body)
+
 	var user User
 
 	if err := ctx.ShouldBindJSON(&user); err != nil {
@@ -39,5 +44,7 @@ func PostUserHandler(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, user)
+	userResponse := UserResponse{Email: user.Email, Id: user.Id}
+
+	ctx.JSON(http.StatusOK, userResponse)
 }
